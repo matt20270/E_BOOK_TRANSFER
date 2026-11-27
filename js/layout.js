@@ -190,6 +190,7 @@ export function pagesToItems(pages) {
     if (pg.mode === "text" || pg.mode === "both") {
       let first = true, any = false;
       for (const p of pg.paras) {
+        if (p.img) { if (!p.removed) { items.push({ type: "img", page: pg.n, key: p.key }); first = false; } continue; }   // 논문 모드: 잘라 낸 그림·표·수식
         const text = String(p.text || "").replace(/\s+/g, " ").trim();
         if (p.removed || !text) continue;
         const last = items[items.length - 1];

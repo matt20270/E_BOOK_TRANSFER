@@ -5,3 +5,4 @@ export const PDF_MAX_BYTES = 5 * 1024 * 1024 * 1024;         // PDF: 어떤 경�
 export const PDF_MAX_PAGES = 5000;                           // 쪽수 상한 (한 번에 처리할 범위는 직접 고를 수 있음)
 export const MAX_CANVAS_PIXELS = 16 * 1000 * 1000;           // 쪽 한 장을 그릴 때 최대 픽셀 수 (메모리 고갈 방지)
 export const MAX_EPUB_IMAGE_BYTES = 1024 * 1024 * 1024;      // EPUB에 넣을 이미지 합계 상한 1GB (브라우저 메모리·EPUB 크기 보호)
+export const PAPER_DIGITAL_MAX_BYTES = 100 * 1024 * 1024;   // 논문 모드(글자 PDF 경로)는 PDF 전체를 엔진에 넘기므로 100MB까지만 (넘으면 쪽 이미지 OCR 경로)

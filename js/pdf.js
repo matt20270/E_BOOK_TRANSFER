@@ -76,12 +76,13 @@ export async function renderToCanvas(page, { maxW, maxH, longSide, gray = false 
   const ctx = canvas.getContext("2d", { willReadFrequently: gray });
   ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, canvas.width, canvas.height);
   await page.render({ canvasContext: ctx, viewport: vp }).promise;
-  if (gray) {
-    const img = ctx.getImageData(0, 0, canvas.width, canvas.height), d = img.data;
-    for (let i = 0; i < d.length; i += 4) { const g = (d[i] * 299 + d[i + 1] * 587 + d[i + 2] * 114) / 1000 | 0; d[i] = d[i + 1] = d[i + 2] = g; }
-    ctx.putImageData(img, 0, 0);
-  }
+  if (gray) grayCanvas(canvas);
   return canvas;
+}
+export function grayCanvas(canvas) {
+  const ctx = canvas.getContext("2d", { willReadFrequently: true }), img = ctx.getImageData(0, 0, canvas.width, canvas.height), d = img.data;
+  for (let i = 0; i < d.length; i += 4) { const g = (d[i] * 299 + d[i + 1] * 587 + d[i + 2] * 114) / 1000 | 0; d[i] = d[i + 1] = d[i + 2] = g; }
+  ctx.putImageData(img, 0, 0);
 }
 // 캔버스를 deg도(시계 방향이 +) 회전한 새 캔버스. 빈 모서리는 원본 테두리의 평균색으로 채운다. (OCR 재시도용, 작은 각도 전용)
 export function rotateCanvas(src, deg) {
