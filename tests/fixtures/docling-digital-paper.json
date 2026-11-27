@@ -1,0 +1,779 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.11.0",
+  "name": "doc",
+  "origin": {
+    "mimetype": "text/plain",
+    "binary_hash": 14604961492998848437,
+    "filename": "doc"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/11"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.38,
+            "t": 734.77,
+            "r": 278.51,
+            "b": 683.72,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "A Study of Bread Fermentation Dynamics",
+      "text": "A Study of Bread Fermentation Dynamics",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.38,
+            "t": 669.8,
+            "r": 176.91,
+            "b": 657.42,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Hong Gildong, Kim Minsu",
+      "text": "Hong Gildong, Kim Minsu"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.38,
+            "t": 645.05,
+            "r": 141.05,
+            "b": 631.13,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "1. Introduction",
+      "text": "Introduction",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.38,
+            "t": 618.75,
+            "r": 290.46,
+            "b": 269.16,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1107
+          ]
+        }
+      ],
+      "orig": "Fermentation is a central process in bread making. In this paper we measure the volume change of dough over time and compare several yeast strains under controlled temperature. The results show consistent improvements in rise time and crumb structure across all tested flours. Fermentation is a central process in bread making. In this paper we measure the volume change of dough over time and compare several yeast strains under controlled temperature. The results show consistent improvements in rise time and crumb structure across all tested flours. Fermentation is a central process in bread making. In this paper we measure the volume change of dough over time and compare several yeast strains under controlled temperature. The results show consistent improvements in rise time and crumb structure across all tested flours. Fermentation is a central process in bread making. In this paper we measure the volume change of dough over time and compare several yeast strains under controlled temperature. The results show consistent improvements in rise time and crumb structure across all tested flours.",
+      "text": "Fermentation is a central process in bread making. In this paper we measure the volume change of dough over time and compare several yeast strains under controlled temperature. The results show consistent improvements in rise time and crumb structure across all tested flours. Fermentation is a central process in bread making. In this paper we measure the volume change of dough over time and compare several yeast strains under controlled temperature. The results show consistent improvements in rise time and crumb structure across all tested flours. Fermentation is a central process in bread making. In this paper we measure the volume change of dough over time and compare several yeast strains under controlled temperature. The results show consistent improvements in rise time and crumb structure across all tested flours. Fermentation is a central process in bread making. In this paper we measure the volume change of dough over time and compare several yeast strains under controlled temperature. The results show consistent improvements in rise time and crumb structure across all tested flours."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.38,
+            "t": 256.78,
+            "r": 118.34,
+            "b": 242.86,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "2. Methods",
+      "text": "Methods",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.38,
+            "t": 230.48,
+            "r": 273.73,
+            "b": 77.34,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            566
+          ]
+        }
+      ],
+      "orig": "We prepared dough samples with hydration levels between sixty and eighty percent and recorded the height every five minutes. All experiments were repeated three times to estimate variance. We prepared dough samples with hydration levels between sixty and eighty percent and recorded the height every five minutes. All experiments were repeated three times to estimate variance. We prepared dough samples with hydration levels between sixty and eighty percent and recorded the height every five minutes. All experiments were repeated three times to estimate variance.",
+      "text": "We prepared dough samples with hydration levels between sixty and eighty percent and recorded the height every five minutes. All experiments were repeated three times to estimate variance. We prepared dough samples with hydration levels between sixty and eighty percent and recorded the height every five minutes. All experiments were repeated three times to estimate variance. We prepared dough samples with hydration levels between sixty and eighty percent and recorded the height every five minutes. All experiments were repeated three times to estimate variance."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 319.15,
+            "t": 559.97,
+            "r": 491.27,
+            "b": 550.69,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "Figure 1. Dough height over time for strain A.",
+      "text": "Figure 1. Dough height over time for strain A."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 319.15,
+            "t": 538.31,
+            "r": 371.74,
+            "b": 524.39,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "3. Results",
+      "text": "Results",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 319.15,
+            "t": 457.88,
+            "r": 486.49,
+            "b": 448.59,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "Table 1. Rise time and final height by strain.",
+      "text": "Table 1. Rise time and final height by strain."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 319.15,
+            "t": 436.22,
+            "r": 547.45,
+            "b": 128.39,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            909
+          ]
+        }
+      ],
+      "orig": "Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types. Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types. Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types. Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types. Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types.",
+      "text": "Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types. Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types. Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types. Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types. Strain A reached the target height fastest, while strain B produced a denser crumb. These differences were statistically significant in all trials and consistent across flour types."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 319.15,
+            "t": 117.56,
+            "r": 392.06,
+            "b": 103.64,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "4. Conclusion",
+      "text": "Conclusion",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.38,
+            "t": 734.77,
+            "r": 270.14,
+            "b": 595.55,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            443
+          ]
+        }
+      ],
+      "orig": "Our findings suggest that strain selection strongly affects both timing and texture, and that careful temperature control improves reproducibility. Our findings suggest that strain selection strongly affects both timing and texture, and that careful temperature control improves reproducibility. Our findings suggest that strain selection strongly affects both timing and texture, and that careful temperature control improves reproducibility.",
+      "text": "Our findings suggest that strain selection strongly affects both timing and texture, and that careful temperature control improves reproducibility. Our findings suggest that strain selection strongly affects both timing and texture, and that careful temperature control improves reproducibility. Our findings suggest that strain selection strongly affects both timing and texture, and that careful temperature control improves reproducibility."
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 337.08,
+            "t": 677.53,
+            "r": 537.89,
+            "b": 583.17,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "image": {
+        "mimetype": "image/png",
+        "dpi": 154,
+        "size": {
+          "width": 430.0,
+          "height": 202.0
+        },
+        "uri": "data:image/png;base64,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"
+      },
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 311.98,
+            "t": 513.56,
+            "r": 610.8,
+            "b": 457.88,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Strain",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Rise (min)",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "A",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "42",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "B",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "55",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "C",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "48",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 4,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Strain",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Rise (min)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "A",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "42",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "B",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "55",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "C",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "48",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "page_no": 2
+    }
+  }
+}

@@ -14,6 +14,8 @@ h2{font-size:1.25em;margin:1.2em 0 .7em;text-align:center;page-break-after:avoid
 
 const CHUNK_CHARS = 7000, IMG_WEIGHT = 3500;
 const pad = (n, w = 4) => String(n).padStart(w, "0");
+const safeKey = k => String(k).replace(/[^A-Za-z0-9_-]/g, "_");
+const imgName = k => (typeof k === "number" ? `p${pad(k)}` : `f_${safeKey(k)}`);
 
 // items -> 파일 단위(챕터)로 나누기. 제목에서 새 파일을 시작해 목차가 자연스럽게 만들어진다.
 export function chunkItems(items, label) {
@@ -66,9 +68,9 @@ export async function buildEpub(JSZip, { title, author = "", lang = "ko", items,
         const hid = `h${++hn}`; body += `<h2 id="${hid}">${esc(it.text)}</h2>\n`;
         toc.push({ href: `${file}#${hid}`, text: it.text });
       } else if (it.type === "p") body += `<p>${esc(it.text)}</p>\n`;
-      else if (it.type === "img" && images.has(it.page)) {
-        usedImages.add(it.page);
-        body += `<div class="pg"><img src="../images/p${pad(it.page)}.jpg" alt="${esc(label(it.page, it.page))}"/></div>\n`;
+      else if (it.type === "img" && images.has(it.key ?? it.page)) {
+        const k = it.key ?? it.page; usedImages.add(k);
+        body += `<div class="pg"><img src="../images/${imgName(k)}.jpg" alt="${esc(it.key === undefined ? label(it.page, it.page) : label(it.page, it.page) + " fig")}"/></div>\n`;
       }
     }
     if (!anyHeading) toc.push({ href: file, text: c.title });
@@ -76,10 +78,10 @@ export async function buildEpub(JSZip, { title, author = "", lang = "ko", items,
     manifest.push(`<item id="c${pad(ci + 1)}" href="${file}" media-type="application/xhtml+xml"/>`);
     spine.push(`<itemref idref="c${pad(ci + 1)}"/>`);
   });
-  for (const n of usedImages) {
-    const im = images.get(n);
-    zip.file(`OEBPS/images/p${pad(n)}.jpg`, im.bytes, { compression: "STORE" });
-    manifest.push(`<item id="p${pad(n)}" href="images/p${pad(n)}.jpg" media-type="image/jpeg"/>`);
+  for (const k of usedImages) {
+    const im = images.get(k), nm = imgName(k);
+    zip.file(`OEBPS/images/${nm}.jpg`, im.bytes, { compression: "STORE" });
+    manifest.push(`<item id="${nm}" href="images/${nm}.jpg" media-type="image/jpeg"/>`);
   }
   if (!toc.length) toc.push({ href: `text/c${pad(1)}.xhtml`, text: title });
 
